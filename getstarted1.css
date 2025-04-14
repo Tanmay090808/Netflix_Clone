@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.alogo .logo {
+  background-image: url("logo_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 167px;
+}
+
+.right p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Divider */
+.separation {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .alogo .logo {
+    width: 120px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .right p {
+    font-size: 18px;
+  }
+}
+
+/* Main container */
+.maindiv {
+  max-width: 600px;
+  height: auto;
+  /* background-color: #f4f4f4; */
+  margin: 80px auto;
+  padding: 30px 20px 80px;
+  position: relative;
+  border-radius: 8px;
+}
+
+/* Center content */
+.aclogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Top image */
+.logoc {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+/* Step indicator */
+.paragraph {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Header */
+.stepheader {
+  font-size: 32px;
+  font-weight: 700;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+/* Context */
+.contextbox {
+  max-width: 75%;
+  padding: 4%;
+  margin: 0 auto 9px;
+}
+
+.context > p {
+  font-size: 24px;
+  color: #444;
+}
+
+/* Button at bottom */
+.pressable {
+  position: absolute;
+  /* bottom: 20px; */
+  width: 70%;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  font-size: 36px;
+  font-weight: 700;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.pressable:hover {
+  background-color: #b20710;
+}
+footer {
+  height: auto;
+  color: #737373;
+  width: 100vw;
+  margin-top: 20%;
+  background-color: #f3f3f3;
+  padding: 20px 0;
+}
+
+.text {
+  margin: 10px;
+  padding: 35px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.ul {
+  padding: 10px;
+}
+
+.ull ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ull ul li a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 14px;
+}
+
+.ull ul li a:hover {
+  text-decoration: underline;
+}

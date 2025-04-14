@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.alogo .logo > a {
+  background-image: url("logo_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 167px;
+}
+
+.right p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Divider */
+.separation {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.5;
+}
+.maindiv {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px 100px;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Step indicator */
+.paragraph {
+  font-size: 14px;
+  color: #555;
+  margin: auto;
+}
+
+/* Header */
+.stepheader {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin: auto;
+}
+
+/* Context */
+.contextbox {
+  max-width: 90%;
+}
+
+.context > p {
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+  margin: auto;
+}
+.context :nth-child(2) {
+  font-size: large;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* Inputs */
+
+.logoo {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: relative;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Lock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pay {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+.pay :nth-child(1) {
+  font-size: 18px;
+  margin: 18px;
+  font-family: sans-serif;
+}
+.pay :nth-child(2) {
+  font-size: 18px;
+  background-image: url("https://assets.nflxext.com/siteui/acquisition/payment/ffe/paymentpicker/VISA@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 30px;
+  width: 40px;
+}
+.pay :nth-child(3) {
+  font-size: 18px;
+  background-image: url("https://assets.nflxext.com/siteui/acquisition/payment/ffe/paymentpicker/MASTERCARD@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  height: 30px;
+  width: 40px;
+}
+.pay :nth-child(4) {
+  font-size: 18px;
+  margin-left: auto;
+}
+/* Button */
+.pressable {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #e50914;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.pressable:hover {
+  background-color: #b20710;
+}
+.encryption {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

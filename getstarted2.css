@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.alogo .logo {
+  background-image: url("logo_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 167px;
+}
+
+.right p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Divider */
+.separation {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.maindiv {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px 100px;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Step indicator */
+.paragraph {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Header */
+.stepheader {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Context */
+.contextbox {
+  max-width: 90%;
+}
+
+.context > p {
+  font-size: 18px;
+  color: #444;
+  text-align: start;
+}
+
+/* Inputs */
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input input {
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+.pressable {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #e50914;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.pressable:hover {
+  background-color: #b20710;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .stepheader {
+    font-size: 24px;
+  }
+
+  .context > p {
+    font-size: 16px;
+  }
+
+  .pressable {
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .right p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .alogo .logo {
+    width: 120px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .maindiv {
+    padding: 20px 10px;
+  }
+}
